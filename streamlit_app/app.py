@@ -767,7 +767,7 @@ elif "Explorer" in page:
             if isinstance(val, float):
                 return 'color: #2ecc71' if val > 0 else ('color: #e74c3c' if val < 0 else '')
             return ''
-        st.dataframe(diff_df.style.applymap(color_diff, subset=['Difference (A−B)']),
+        st.dataframe(diff_df.style.map(color_diff, subset=['Difference (A−B)']),
                      width="stretch", hide_index=True)
 
 
