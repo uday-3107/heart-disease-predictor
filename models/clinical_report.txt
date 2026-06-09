@@ -1,0 +1,31 @@
+CLINICAL INTERPRETABILITY REPORT
+=================================
+Model Used: KNN
+Performance (ROC-AUC): 0.9064
+
+OVERVIEW:
+This report identifies the key physiological and clinical markers that the AI model
+uses to predict the presence of heart disease. These markers indicate the most
+influential factors in the model's decision-making process.
+
+KEY CLINICAL DRIVERS (Top Features):
+- Thalassemia 2 (thal_2): Importance Score = 0.0675
+- Thalassemia 3 (thal_3): Importance Score = 0.0627
+- Exercise induced angina (exang): Importance Score = 0.0543
+- Chest pain type 2 (cp_2): Importance Score = 0.0399
+- Number of major vessels colored by flourosopy (ca): Importance Score = 0.0353
+- Gender (1=Male, 0=Female) (sex): Importance Score = 0.0351
+- ST depression induced by exercise (oldpeak): Importance Score = 0.0285
+- Chest pain type 1 (cp_1): Importance Score = 0.0268
+- Maximum heart rate achieved (thalach): Importance Score = 0.0252
+- Slope of peak exercise ST segment 2 (slope_2): Importance Score = 0.0234
+
+CLINICAL INTERPRETATION:
+High importance scores suggest that the model heavily weighs these features.
+For instance, markers related to chest pain (cp), maximum heart rate (thalach),
+and ST depression (oldpeak) are typically strong predictors of cardiac events.
+Physicians should prioritize these factors when interpreting model predictions.
+
+DISCLAIMER:
+This AI report is for clinical decision support and should not replace
+professional medical judgment.
